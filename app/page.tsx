@@ -8,7 +8,7 @@ const HomePage = () => {
     <>
     <Hero />
     <CategorySection />
-    <ProductSection />
+    <ProductSection title="Featured Products" />
     </>
   )
 }
