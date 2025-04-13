@@ -3,6 +3,7 @@ import { Ubuntu } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/navbar/NavBar";
 import Footer from "@/components/footer/Footer";
+import NavBarContainer from "@/components/navbar/NavBarContainer";
 
 const ubuntu = Ubuntu({
   weight: ["400", "500", "700"], // Changed "600" to "700"
@@ -23,7 +24,8 @@ export default function RootLayout({
     <html lang="en" className={ubuntu.className}>
       <body className="">
         <main className="w-full">
-          <NavBar />
+          {/* <NavBar /> */}
+          <NavBarContainer />
           {children}
           <Footer />
         </main>
